@@ -334,6 +334,55 @@ body[data-lvl="4"] { --bg: #EAF2FF; --bg2: #C9DEFF; background: radial-gradient(
 body[data-lvl="5"] { --bg: #F1EBFF; --bg2: #DACBFF; background: radial-gradient(1200px 380px at 50% -120px, var(--bg2), transparent 70%), url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cg stroke='%238B5CF6' stroke-linecap='round' opacity='.25'%3E%3Cpath d='M0 40 H120' stroke-width='2.5'/%3E%3Cpath d='M0 100 H120' stroke-width='2.5'/%3E%3Cpath d='M10 40 v8' stroke-width='2.5'/%3E%3Cpath d='M10 100 v-8' stroke-width='2.5'/%3E%3Cpath d='M20 40 v8' stroke-width='2.5'/%3E%3Cpath d='M20 100 v-8' stroke-width='2.5'/%3E%3Cpath d='M30 40 v8' stroke-width='2.5'/%3E%3Cpath d='M30 100 v-8' stroke-width='2.5'/%3E%3Cpath d='M40 40 v14' stroke-width='2.5'/%3E%3Cpath d='M40 100 v-14' stroke-width='2.5'/%3E%3Cpath d='M50 40 v8' stroke-width='2.5'/%3E%3Cpath d='M50 100 v-8' stroke-width='2.5'/%3E%3Cpath d='M60 40 v8' stroke-width='2.5'/%3E%3Cpath d='M60 100 v-8' stroke-width='2.5'/%3E%3Cpath d='M70 40 v8' stroke-width='2.5'/%3E%3Cpath d='M70 100 v-8' stroke-width='2.5'/%3E%3Cpath d='M80 40 v14' stroke-width='2.5'/%3E%3Cpath d='M80 100 v-14' stroke-width='2.5'/%3E%3Cpath d='M90 40 v8' stroke-width='2.5'/%3E%3Cpath d='M90 100 v-8' stroke-width='2.5'/%3E%3Cpath d='M100 40 v8' stroke-width='2.5'/%3E%3Cpath d='M100 100 v-8' stroke-width='2.5'/%3E%3Cpath d='M110 40 v8' stroke-width='2.5'/%3E%3Cpath d='M110 100 v-8' stroke-width='2.5'/%3E%3C/g%3E%3Cg fill='%238B5CF6' opacity='.22'%3E%3Ccircle cx='60' cy='70' r='4'/%3E%3Ccircle cx='20' cy='70' r='2'/%3E%3Ccircle cx='100' cy='70' r='2'/%3E%3C/g%3E%3C/svg%3E") 0 0 / 120px 120px, var(--bg); background-attachment: scroll, fixed, scroll; }
 body[data-lvl="6"] { --bg: #FFEAF4; --bg2: #FFC9E2; background: radial-gradient(1200px 380px at 50% -120px, var(--bg2), transparent 70%), url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cg fill='%23EC4899' font-family='Georgia,serif' font-weight='bold' opacity='.2'%3E%3Ctext x='10' y='50' font-size='52'%3E“%3C/text%3E%3Ctext x='68' y='104' font-size='52'%3E”%3C/text%3E%3Ctext x='74' y='36' font-size='22'%3EA%3C/text%3E%3Ctext x='20' y='100' font-size='22'%3EZ%3C/text%3E%3C/g%3E%3Cg fill='%23EC4899' opacity='.16'%3E%3Crect x='52' y='52' width='8' height='8' transform='rotate(45 56 56)'/%3E%3C/g%3E%3C/svg%3E") 0 0 / 120px 120px, var(--bg); background-attachment: scroll, fixed, scroll; }
 
+/* Oefentoetsen: gemengde vraagtypes */
+.ptsb { background: #fff1d6; color: #8a5a00; border-radius: 99px; padding: 4px 10px; font-size: .78rem; font-weight: 800; }
+.qcard.deep { border-color: #c9b8ff; box-shadow: 0 5px 0 #c9b8ff; }
+.stlist { display: grid; gap: 10px; margin-top: 4px; }
+.stel { border: 2px solid var(--line); border-radius: 16px; padding: 10px 12px; background: #fafbff; display: grid; gap: 8px; min-width: 0; }
+.stel p { margin: 0; font-weight: 700; }
+.stel small { color: var(--mut); font-weight: 600; }
+.stel.good { border-color: var(--green); background: var(--green-bg); }
+.stel.bad { border-color: var(--red); background: var(--red-bg); }
+.stel.skip { border-color: #c3cbe2; background: #eceff8; }
+.stv { font-size: .92rem; }
+.tfpair { display: flex; gap: 8px; }
+.tfb { flex: 1; padding: 10px 12px; font-size: 1rem; }
+.defs { list-style: none; margin: 0 0 12px; padding: 0; display: grid; gap: 6px; }
+.defs li { display: flex; gap: 10px; align-items: flex-start; background: #f6f8fd; border: 2px solid var(--line); border-radius: 14px; padding: 8px 10px; min-width: 0; }
+.defs b { flex: none; width: 26px; height: 26px; border-radius: 8px; background: var(--brand); color: #fff; display: grid; place-items: center; font-size: .9rem; }
+.defs span { min-width: 0; font-weight: 700; }
+.mlist { display: grid; gap: 8px; }
+.mrow { display: flex; align-items: center; justify-content: space-between; gap: 10px; border: 2px solid var(--line); border-radius: 14px; padding: 8px 10px; background: #fff; }
+.mrow span { font-weight: 800; min-width: 0; }
+.msel { flex: none; font: inherit; font-weight: 800; border: 2px solid var(--line); border-radius: 12px; padding: 8px 10px; background: #fff; color: var(--ink); min-width: 92px; }
+.ptsline { margin: 10px 0 0; font-weight: 700; color: var(--mut); }
+.ans-box.crit { background: #f4f1ff; border-color: #c9b8ff; }
+.ans-box.crit ul { margin: 0; padding-left: 18px; }
+.olist li.ok { color: var(--green-ink); font-weight: 800; }
+.olist li.no { color: var(--red-ink); font-weight: 800; }
+
+/* Flitskaarten */
+.herhaal.fl { background: linear-gradient(135deg, #ffb020, #ef6c1a); box-shadow: 0 5px 0 #c2570f; }
+.herhaal.fl:active { box-shadow: 0 2px 0 #c2570f; }
+.flbtn { width: 100%; margin-top: 14px; }
+.flopt { display: flex; align-items: center; gap: 10px; background: #fff; border: 2px solid var(--line); border-radius: 16px; padding: 10px 14px; margin: 4px 0 12px; font-weight: 800; }
+.flopt input { width: 22px; height: 22px; accent-color: var(--brand); }
+.fdecks { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+.fl-tag { text-align: center; font-weight: 800; color: color-mix(in srgb, var(--lc) 70%, #000); margin: 0 0 10px; }
+.fcard { display: grid; perspective: 1200px; cursor: pointer; outline-offset: 4px; }
+.fface { grid-area: 1 / 1; min-height: 300px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; text-align: center; padding: 22px 18px; border-radius: 28px; background: #fff; border: 3px solid var(--lc); box-shadow: 0 6px 0 var(--lc); backface-visibility: hidden; -webkit-backface-visibility: hidden; transition: transform .45s cubic-bezier(.3,.9,.3,1); min-width: 0; }
+.fface.front { transform: rotateY(0deg); }
+.fface.back { transform: rotateY(180deg); background: color-mix(in srgb, var(--lc) 12%, #fff); }
+.fcard.flip .front { transform: rotateY(-180deg); }
+.fcard.flip .back { transform: rotateY(0deg); }
+.fface small { color: var(--mut); font-weight: 800; text-transform: uppercase; letter-spacing: .06em; font-size: .75rem; }
+.fq { font-family: var(--disp); font-size: 1.55rem; line-height: 1.2; text-wrap: balance; }
+.fa { font-size: 1.25rem; line-height: 1.4; font-weight: 800; text-wrap: pretty; }
+.fimg { max-height: 150px; width: auto; max-width: 100%; object-fit: contain; }
+.fsay { display: block; margin: 12px auto 0; }
+.fbtns { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+@media (prefers-reduced-motion: reduce) { .fface { transition: none; } }
+
 </style>
 </head>
 <body>
@@ -744,7 +793,7 @@ function tm(id, t, q, correct, wrongs, o = {}) {
 const to = (t, q, model, o = {}) => ({ type: "open", t, q, model, ...o });
 const fixed = (t, q, opts, ans, why, o = {}) => ({ type: "mc", t, q, opts, ans, why, ...o });
 
-const TOETSEN = [
+const TOETSEN_OLD = [
   {
     id: 1, title: "Oefentoets 1", sub: "De formatieve toets uit je lesmateriaal (20 vragen)",
     qs: [
@@ -850,6 +899,215 @@ const TOETSEN = [
   },
 ];
 
+
+/* ===== Gemixte oefentoetsen 2 t/m 4: meerkeuze, juist/onjuist, koppelen, volgorde, korte en verdiepende open vragen ===== */
+function shuf(arr, rng) { const a = arr.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(rng() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
+function shufNot(n, rng) { let idx, k = 0; do { idx = shuf([...Array(n).keys()], rng); } while (idx.every((v, i) => v === i) && k++ < 30); return idx; }
+const tmulti = (t, q, items, o = {}) => ({ type: "multi", t, q, items: items.map(([s, v, why]) => ({ s, v, why })), ...o });
+function tmatch(id, t, q, pairs, o = {}) {
+  const idx = shufNot(pairs.length, rngFrom(id));
+  return { type: "match", t, q, terms: pairs.map((p) => p[0]), defs: idx.map((i) => pairs[i][1]), key: pairs.map((_, i) => idx.indexOf(i)), ...o };
+}
+function torder(id, t, q, items, o = {}) {
+  const idx = shufNot(items.length, rngFrom(id));
+  return { type: "order", t, q, items: idx.map((i) => items[i]), key: items.map((_, p) => idx.indexOf(p)), model: items, ...o };
+}
+const tk = (t, q, model, crit) => to(t, q, model, { kort: true, crit });
+const td = (t, q, model, crit) => to(t, q, model, { deep: true, pts: 2, crit });
+const pk = (n, ids) => ids.map((i) => TOETSEN_OLD[n].qs[i]);
+
+const TOETSEN = [
+  TOETSEN_OLD[0],
+  {
+    id: 2, v: 2, title: "Oefentoets 2", sub: "20 vragen: meerkeuze, juist/onjuist, koppelen, volgorde en open vragen",
+    qs: [
+      ...pk(1, [0, 2, 4, 8, 11, 13, 9, 15]),
+      tmulti(1, "Juist of onjuist? Kies bij elke stelling.", [
+        ["Jager-verzamelaars verhuisden vaak, omdat de beste plekken per seizoen verschilden.", true, "Daarom heten ze nomaden."],
+        ["Jager-verzamelaars hielden vee dat ze molken.", false, "Vee hoort bij de boeren."],
+        ["Jager-verzamelaars hadden veel spullen.", false, "Ze bezaten niet meer dan ze konden dragen."],
+        ["Jager-verzamelaars gebruikten pijl en boog.", true, "Daarmee schoten ze bijvoorbeeld vogels."],
+      ]),
+      tmatch("T2-M1", 6, "Koppel elk begrip aan de goede uitleg. Kies de letter.", [
+        ["nomade", "Iemand zonder vaste woonplaats die steeds rondtrekt"],
+        ["vee", "Dieren die mensen houden voor melk, vlees of wol"],
+        ["bron", "Alles waarmee je iets over het verleden te weten komt"],
+        ["keerpunt", "Een moment waarop het leven van mensen ingrijpend verandert"],
+      ]),
+      torder("T2-O1", 4, "Zet de gebeurtenissen in de goede volgorde, van vroeger naar later.", [
+        "Mensen trekken rond als nomaden.", "De landbouw wordt uitgevonden.", "Er is een regelmatig aanbod van voedsel.", "Dorpen groeien uit tot steden."]),
+      tmulti(2, "Juist of onjuist? Het gaat over bronnen.", [
+        ["Een pijlpunt is een ongeschreven bron.", true, "Er staat geen tekst op."],
+        ["Het verhaal van Plinius over de terpbewoners is een ongeschreven bron.", false, "Plinius schreef het op: een geschreven bron."],
+        ["Over de Prehistorie bestaan geen geschreven bronnen.", true, "Mensen konden nog niet schrijven."],
+        ["Ongeschreven bronnen vertellen vooral wat mensen dachten en voelden.", false, "Een voorwerp zegt vooral hoe mensen leefden."],
+      ]),
+      tk(2, "Noem twee voorbeelden van ongeschreven bronnen uit de Prehistorie.", "Bijvoorbeeld een pijlpunt, een fuik, een kano, resten van hutten, een stenen bijl, botten of een skelet.", ["Twee voorwerpen of resten uit de Prehistorie", "Geen geschreven bron (zoals een tekst)"]),
+      tk(3, "Waarom konden boeren op één plek blijven wonen?", "Ze verbouwden hun voedsel zelf op akkers bij hun huis en hadden vee, dus ze hoefden niet meer te zoeken naar voedsel.", ["Ze maakten zelf voedsel (akkers/vee)"]),
+      tk(6, "Wat betekent ‘een gebied in cultuur brengen’?", "Mensen bewerken de aarde en maken er iets van, bijvoorbeeld akkers of een dorp, in plaats van dat het natuur blijft.", ["Mensen veranderen natuur door te bewerken of te bebouwen"]),
+      td(2, "Er is bijna geen kleding van jager-verzamelaars teruggevonden. Leg uit hoe dat komt en waarom dat lastig is voor onderzoekers of tekenaars.", "Kleding was van huiden en andere stoffen en die vergaan snel in de grond (steen blijft veel langer bewaard). Daardoor weten we weinig over hoe de kleding eruitzag en moet een tekenaar het deels raden.", ["1 punt: reden (materiaal vergaat, blijft niet bewaard)", "1 punt: gevolg (we weten weinig/een tekenaar moet raden)"]),
+      td(3, "Vergelijk het leven van een jager-verzamelaar met dat van een boer. Noem minstens drie verschillen.", "Jager-verzamelaars trokken rond, boeren woonden op een vaste plek in dorpen. Jager-verzamelaars haalden voedsel uit de natuur door te jagen, vissen en verzamelen, boeren verbouwden het zelf en hielden vee. Jager-verzamelaars hadden weinig bezit, boeren hadden grotere huizen en meer spullen, zoals aardewerk.", ["Per goed verschil telt 0,5-1 punt; 3 verschillen = 2 punten", "Denk aan: woonplaats, voedsel, bezit, huizen, aardewerk, vee"]),
+      td(3, "Waarom noemen we de uitvinding van de landbouw een keerpunt in de geschiedenis? Leg uit met twee veranderingen.", "Het hele leven van mensen veranderde ingrijpend. Ze bleven op één plek wonen, er was een regelmatig aanbod van voedsel, de bevolking groeide en er kwamen dorpen en steden. Ook werd de aarde in cultuur gebracht.", ["1 punt: uitleg wat een keerpunt is (ingrijpende verandering)", "1 punt: twee goede veranderingen"]),
+      td(4, "Leg uit hoe de landbouw tot bevolkingsgroei leidde en noem één gevolg daarvan voor de natuur.", "Door de landbouw was er een vast en regelmatig aanbod van voedsel, dus er konden meer mensen leven en de bevolking groeide. Daardoor werd er meer land in cultuur gebracht en kregen wilde planten en dieren minder ruimte.", ["1 punt: meer voedsel, dus meer mensen", "1 punt: gevolg voor de natuur (minder ruimte)"]),
+      td(2, "Een leerling zegt: ‘In de steentijd gebruikten mensen alleen steen.’ Leg uit waarom dit niet helemaal klopt.", "Mensen gebruikten ook andere materialen, zoals hout, bot en huiden. Die vergaan sneller, dus er is minder van teruggevonden. Steen blijft het langst bewaard, daarom is dat zo vaak gevonden en heet het steentijd.", ["1 punt: ook ander materiaal gebruikt (hout, bot)", "1 punt: steen blijft beter bewaard, dus meer gevonden"]),
+    ],
+  },
+  {
+    id: 3, v: 2, title: "Oefentoets 3", sub: "20 vragen: meerkeuze, juist/onjuist, koppelen, volgorde en open vragen",
+    qs: [
+      ...pk(2, [1, 3, 6, 8, 9, 12, 14, 4]),
+      tmulti(3, "Juist of onjuist? Het gaat over boeren.", [
+        ["Boeren verbouwden zelf hun voedsel.", true, "Dat is het belangrijkste kenmerk."],
+        ["Boeren trokken elk seizoen naar een nieuwe plek.", false, "Boeren woonden op een vaste plek."],
+        ["Boeren maakten aardewerk om voedsel in te bewaren.", true, "Aardewerk is gebakken klei."],
+        ["Boeren gebruikten geen stenen gereedschap meer.", false, "Ze gebruikten nog bijvoorbeeld de vuurstenen bijl."],
+      ]),
+      tmatch("T3-M1", 2, "Koppel elk begrip aan de goede uitleg. Kies de letter.", [
+        ["geschreven bron", "Een bron met tekst, zoals het verhaal van Plinius"],
+        ["ongeschreven bron", "Een voorwerp zonder tekst, zoals een pijlpunt"],
+        ["vuistbijl", "Een stenen bijl zonder steel die je in je hand houdt"],
+        ["fuik", "Een val van touw en biezen waarin vissen blijven zwemmen"],
+      ]),
+      torder("T3-O1", 5, "Zet de gebeurtenissen op de tijdbalk in de goede volgorde, van vroeger naar later.", [
+        "De denkende mens ontstaat (300.000 v.C.).", "De landbouw wordt uitgevonden (10.000 v.C.).", "Het tijdvak jagers & boeren eindigt (800 v.C.).", "Er is meer cultuurgrond dan natuurgrond."]),
+      tmulti(4, "Juist of onjuist? Het gaat over de gevolgen van de landbouw.", [
+        ["Door de landbouw groeide de bevolking.", true, "Meer voedsel betekent meer mensen."],
+        ["Door de landbouw kreeg de natuur meer ruimte.", false, "De natuur kreeg juist minder ruimte."],
+        ["Een dijk hoort bij cultuur.", true, "Mensen hebben hem bedacht en gemaakt."],
+        ["Een bos dat vanzelf groeit hoort bij cultuur.", false, "Dat is natuur."],
+      ]),
+      tk(1, "Waarom hadden jager-verzamelaars weinig bezit?", "Ze verhuisden vaak en moesten alles meenemen, dus ze hadden niet meer dan ze konden dragen.", ["Ze verhuisden vaak / moesten alles dragen"]),
+      tk(6, "Leg in eigen woorden uit wat een nomade is.", "Een nomade is iemand zonder vaste woonplaats, die steeds van plek naar plek trekt.", ["Geen vaste woonplaats", "Trekt rond"]),
+      tk(4, "Noem twee gevolgen van bevolkingsgroei.", "Dorpen groeiden uit tot steden en er kwam meer cultuurgrond. Wilde planten en dieren kregen minder ruimte.", ["Twee goede gevolgen (steden, minder natuur, meer akkers)"]),
+      td(2, "Een tekenaar maakt een plaat van een jagerskamp. Wat kan hij baseren op opgravingen en wat moet hij zelf bedenken? Leg uit waarom.", "Hutresten, gereedschap en wapens zijn bij opgravingen gevonden, dus die kan hij nauwkeurig tekenen. Kleding en wat mensen dachten of zeiden blijft niet bewaard of staat nergens opgeschreven, dus dat moet hij raden.", ["1 punt: wat bekend is uit opgravingen (hutten, werktuigen)", "1 punt: wat geraden is (kleding) met reden"]),
+      td(3, "Een archeoloog vindt resten van een grote houten hut, scherven van aardewerk en graankorrels. Waren het jager-verzamelaars of boeren? Geef minstens twee aanwijzingen.", "Het waren boeren. Een grote hut betekent dat ze op een vaste plek woonden, aardewerk gebruikten ze om voedsel te bewaren en de graankorrels laten zien dat ze zelf voedsel verbouwden.", ["1 punt: antwoord boeren", "1 punt: twee goede aanwijzingen (vaste hut, aardewerk, graan)"]),
+      td(3, "Op een tekening zie je een jagerskamp en een boerendorp naast elkaar. Wat leert dit over de overgang van jagen naar landbouw?", "De overgang ging niet in één klap: jagers en boeren leefden lang naast elkaar. Niet iedereen werd meteen boer. Sommige groepen bleven nog jarenlang jagen en rondtrekken.", ["1 punt: niet in één keer/niet iedereen tegelijk", "1 punt: beide groepen leefden naast elkaar"]),
+      td(4, "‘In cultuur brengen is voor de natuur niet goed.’ Leg uit waarom en geef een voorbeeld.", "Als mensen land in cultuur brengen, bijvoorbeeld door een bos om te hakken voor akkers, hebben wilde planten en dieren steeds minder ruimte om te leven.", ["1 punt: wilde planten en dieren verliezen ruimte", "1 punt: een goed voorbeeld (bos wordt akker, dorp, stad)"]),
+      td(4, "Noem een positief en een negatief gevolg van de uitvinding van de landbouw.", "Positief: er was een regelmatig aanbod van voedsel, dus de bevolking kon groeien. Negatief: er kwam steeds meer cultuurgrond en wilde planten en dieren kregen minder ruimte.", ["1 punt: een goed positief gevolg", "1 punt: een goed negatief gevolg"]),
+    ],
+  },
+  {
+    id: 4, v: 2, title: "Oefentoets 4", sub: "20 vragen: meerkeuze, juist/onjuist, koppelen, volgorde en open vragen",
+    qs: [
+      ...pk(3, [1, 2, 4, 5, 7, 9, 12, 14]),
+      tmulti(5, "Juist of onjuist? Het gaat over de tijdbalk.", [
+        ["De landbouw werd uitgevonden rond 10.000 v.C.", true, "Dat is het keerpunt."],
+        ["Het tijdvak jagers & boeren begint rond 800 v.C.", false, "Het eindigt rond 800 v.C."],
+        ["De tijd vóór de landbouw duurde veel langer dan de tijd erna.", true, "Van 300.000 v.C. tot 10.000 v.C. is veel langer dan sinds 10.000 v.C."],
+        ["Er zijn nu nog steeds mensen die als jager-verzamelaar leven.", true, "Bijvoorbeeld de Khoisan in Zuid-Afrika."],
+      ]),
+      tmatch("T4-M1", 6, "Koppel elk begrip aan de goede uitleg. Kies de letter.", [
+        ["bevolkingsgroei", "Het aantal mensen neemt toe"],
+        ["cultuur", "Alles wat mensen bedenken en maken, zoals een akker of een dijk"],
+        ["natuur", "Alles wat vanzelf ontstaat en groeit, zoals een bos"],
+        ["aardewerk", "Potten en bekers gemaakt van gebakken klei"],
+      ]),
+      torder("T4-O1", 3, "Een boer legt een akker aan. Zet de stappen in de goede volgorde.", [
+        "Het bos wordt omgehakt.", "De grond wordt bewerkt.", "Er worden zaden gezaaid.", "Het graan wordt geoogst."]),
+      tmulti(1, "Juist of onjuist? Het gaat over jager-verzamelaars.", [
+        ["Jager-verzamelaars maakten hutten van gebogen takken met rieten matten.", true, "Dat laten opgravingen zien."],
+        ["Jager-verzamelaars schreven hun verhalen op.", false, "Ze konden nog niet schrijven."],
+        ["De Khoisan in Zuid-Afrika leven nog als nomadische jager-verzamelaars.", true, "Jager-verzamelaars bestaan nog steeds."],
+        ["Jager-verzamelaars brachten de aarde in cultuur.", false, "Dat deden pas de boeren."],
+      ]),
+      tk(2, "Wat is het verschil tussen een geschreven en een ongeschreven bron?", "Een geschreven bron heeft tekst, zoals een boek. Een ongeschreven bron is een voorwerp of rest zonder tekst, zoals een pijlpunt.", ["Geschreven = tekst", "Ongeschreven = voorwerp/rest zonder tekst"]),
+      tk(3, "Noem twee dingen die boeren deden en jager-verzamelaars niet.", "Boeren verbouwden voedsel op akkers, hielden vee, woonden in dorpen op een vaste plek en maakten aardewerk.", ["Twee goede dingen"]),
+      tk(5, "Waar leven nu nog jager-verzamelaars? Noem een voorbeeld.", "Bijvoorbeeld de Khoisan in Zuid-Afrika.", ["Een goed voorbeeld (Khoisan, Zuid-Afrika)"]),
+      td(4, "Leg uit hoe de uitvinding van de landbouw ervoor zorgde dat sommige dorpen steden werden. Gebruik de woorden voedsel, bevolkingsgroei en dorp.", "Door de landbouw was er genoeg voedsel, dus er konden meer mensen leven (bevolkingsgroei). Het aantal inwoners van een dorp nam toe, waardoor sommige dorpen uitgroeiden tot steden.", ["1 punt: voedsel leidt tot bevolkingsgroei", "1 punt: groeiende dorpen worden steden"]),
+      td(5, "Het Amazonegebied is belangrijk voor het klimaat van de hele wereld. Waarom willen mensen er toch bos omhakken en wat kan het gevolg zijn?", "Mensen willen ruimte voor akkers, vee en dorpen, dus ze brengen het gebied in cultuur. Gevolg: wilde planten en dieren krijgen minder ruimte en het klimaat kan veranderen.", ["1 punt: reden (ruimte voor akkers, vee, bouwen)", "1 punt: gevolg (natuur verdwijnt, klimaat)"]),
+      td(1, "Een leerling zegt: ‘Jager-verzamelaars waren minder slim dan boeren.’ Wat vind jij? Geef twee argumenten.", "Dat klopt niet. Jager-verzamelaars pasten zich slim aan hun leven aan: ze kenden de natuur, maakten gereedschap, wapens, hutten en boten en wisten waar en wanneer ze voedsel konden vinden. Ze leefden anders dan boeren, niet dommer.", ["1 punt: standpunt met onderbouwing", "1 punt: twee goede argumenten (kennis natuur, gereedschap, hutten)"]),
+      td(5, "Vergelijk de tijd vóór en na de uitvinding van de landbouw (300.000 v.C., 10.000 v.C., nu). Welke periode duurde langer en wat veranderde er?", "De tijd vóór de landbouw duurde ongeveer 290.000 jaar, daarna ongeveer 12.000 jaar tot nu, dus de eerste periode was veel langer. Vóór de landbouw leefden mensen als nomadische jager-verzamelaars, daarna op vaste plekken met akkers, vee, dorpen en steden.", ["1 punt: eerste periode veel langer", "1 punt: de grote verandering (nomaden naar vaste plek/landbouw)"]),
+      td(2, "Stel dat je een kano, een fuik en vuurstenen pijlpunten vindt. Wat leer je daarover van de mensen die ze gebruikten en wat weet je dan nog niet?", "Je leert dat ze visten en jaagden en waarschijnlijk dicht bij water leefden. Wat ze dachten, spraken of aanhadden weet je niet, want dat vertellen ongeschreven bronnen niet en kleding vergaat.", ["1 punt: wat je leert (vissen/jagen)", "1 punt: wat je niet weet (gedachten, kleding, taal)"]),
+    ],
+  },
+];
+
+/* ===== Flitskaarten: voorkant = vraag of begrip, achterkant = antwoord ===== */
+const FLITS = (() => {
+  const out = [];
+  const add = (l, rows) => rows.forEach(([front, back, img], i) => out.push({ id: `F${l}-${i + 1}`, l, front, back, img }));
+  add(1, [
+    ["Waarvan leefden de eerste mensen?", "Van jagen en van voedsel verzamelen in de natuur. Daarom heten ze jager-verzamelaars."],
+    ["Wat is een nomade?", "Iemand die rondtrekt en geen vaste woonplaats heeft."],
+    ["Waarom trokken jager-verzamelaars rond?", "In elk seizoen waren andere plekken goed om te jagen, te vissen en te verzamelen."],
+    ["Waarom hadden jager-verzamelaars weinig spullen?", "Wie vaak verhuist, moet alles meenemen. Daarom hadden ze weinig spullen en weinig rijkdom."],
+    ["Waarvan maakten jager-verzamelaars hun hutten?", "Van gebogen takken met matten van gevlochten riet erover.", "a1"],
+    ["Waarmee schoten ze vogels?", "Met pijl en boog."],
+    ["Hoe vingen ze vissen?", "Met speren en harpoenen vanuit een kano, of met een fuik."],
+    ["Wat is een fuik?", "Een val voor vissen, gemaakt van touw en biezen.", "a4"],
+    ["Wat is bijzonder aan de kano uit Drenthe?", "Het is de oudste boot ter wereld: bijna 10.000 jaar oud.", "a3"],
+    ["Wat moet een tekenaar van een jagerskamp vaak zelf raden?", "De kleding. Die blijft niet duizenden jaren bewaard in de grond."],
+    ["Hoe weten we hoe hutten en gereedschap eruitzagen?", "Bijna alles is gevonden bij opgravingen."],
+  ]);
+  add(2, [
+    ["Wat is een bron?", "Alles waarmee je iets over het verleden te weten komt: een speerpunt, een kledingstuk, een boek of een e-mail."],
+    ["Wat is een geschreven bron?", "Een bron met tekst erin, zoals een boek, een brief, een kassabon of het verhaal van Plinius."],
+    ["Wat is een ongeschreven bron?", "Een voorwerp zonder tekst, zoals een speerpunt, een kano, een fuik of een skelet."],
+    ["Welke bronnen zijn er over de Prehistorie?", "Bijna alleen ongeschreven bronnen, want mensen konden nog niet schrijven."],
+    ["Waarom weten we weinig over de Prehistorie?", "Er zijn geen geschreven bronnen. Daardoor zijn veel vragen niet te beantwoorden."],
+    ["Wat zeggen ongeschreven bronnen weinig over?", "Over wat mensen dachten en voelden. Geschreven bronnen vertellen dat wel."],
+    ["Wat is de steentijd?", "De tijd waarin veel stenen werktuigen werden gebruikt. Er is veel steen uit opgegraven."],
+    ["Wat is een vuistbijl?", "Een stenen bijl zonder steel, die je in je hand houdt.", "a7"],
+    ["Waarom klopt de naam ‘steentijd’ niet helemaal?", "Mensen gebruikten ook hout, bot, huiden en manden. Die vergaan sneller dan steen, dus er is minder van gevonden."],
+    ["Waarom blijft steen zo lang bewaard?", "Steen blijft heel lang goed in de grond. Hout, bot en huiden vergaan sneller.", "opgraving"],
+    ["Waar kun je alleen met een geschreven bron achter komen?", "Bijvoorbeeld hoe iemand heette of wat iemand dacht."],
+  ]);
+  add(3, [
+    ["Wanneer en waar werd de landbouw uitgevonden?", "Omstreeks 10.000 v.C. in het Midden-Oosten."],
+    ["Wat ontdekten de eerste boeren?", "Dat je zelf voedsel kunt maken door akkers in te zaaien."],
+    ["Wat is vee?", "Tamme dieren die mensen houden voor melk, vlees of wol."],
+    ["Waarom is de landbouw een keerpunt?", "Het leven van mensen veranderde ingrijpend."],
+    ["Waarom trokken boeren niet rond?", "Ze hadden een vaste woonplaats bij hun akkers en bouwden grote huizen die jarenlang bleven staan.", "a8"],
+    ["Hoe legden boeren akkers aan in het bos?", "Ze hakten bomen om met een gladde, scherpe bijl van vuursteen met een houten steel."],
+    ["Wat is fokken?", "Dieren zo laten voortplanten dat ze nuttiger worden: vette varkens, koeien met veel melk, schapen met veel wol.", "a9"],
+    ["Waarom konden sommige gefokte dieren niet meer zonder mensen?", "Een koe moet gemolken worden en een schaap moet geschoren worden."],
+    ["Van welk wild dier stamt het varken af?", "Van het wilde zwijn.", "a9"],
+    ["Wat is aardewerk?", "Potten, bekers en schalen van gebakken klei.", "a10"],
+    ["Waren alle jagers meteen boeren?", "Nee. Niet alles veranderde ineens: er bleven nog lang jagers in de buurt van de boeren.", "a11"],
+  ]);
+  add(4, [
+    ["Wat is natuur?", "Alles wat vanzelf ontstaat en groeit, zoals een bos."],
+    ["Wat is cultuur?", "Alles wat niet vanzelf ontstaat, maar door mensen wordt bedacht en gemaakt, zoals een akker of een dijk."],
+    ["Wat is ‘een gebied in cultuur brengen’?", "De aarde bewerken, bijvoorbeeld met akkers, huizen en wegen."],
+    ["Hoe zag Europa er vroeger uit?", "Het was overdekt met bossen. Nu is het meeste bos verdwenen.", "a12"],
+    ["Waarom was er door de landbouw altijd genoeg te eten?", "Boeren konden zelf een vast en regelmatig aanbod van voedsel maken."],
+    ["Wat is bevolkingsgroei?", "Het aantal mensen wordt groter."],
+    ["Waardoor kwam de bevolkingsgroei?", "Door het regelmatige aanbod van voedsel uit de landbouw."],
+    ["Wat gebeurde er met sommige dorpen?", "Ze werden steeds groter en veranderden in steden."],
+    ["Wat is een gevolg voor wilde planten en dieren?", "Er is steeds minder plaats voor ze."],
+    ["Hoe lang geleden begon dit allemaal?", "Ongeveer 12.000 jaar geleden, met de landbouw."],
+    ["Welke afbeelding laat natuur zien: een bos of een akker?", "Het bos. Een akker is door mensen gemaakt, dus cultuur.", "t3"],
+  ]);
+  add(5, [
+    ["Wanneer ontstond de denkende mens (homo sapiens)?", "Omstreeks 300.000 v.C."],
+    ["Wanneer werd de landbouw uitgevonden?", "Omstreeks 10.000 v.C. Dit is het keerpunt."],
+    ["Wanneer eindigt het tijdvak Jagers & boeren?", "Rond 800 v.C."],
+    ["Wat is de volgorde op de tijdbalk?", "Eerst de denkende mens (300.000 v.C.), dan de landbouw (10.000 v.C.), dan het einde van het tijdvak (800 v.C.).", "chart"],
+    ["Wat duurde veel langer: de tijd vóór of na de landbouw?", "Vóór de landbouw: de tijd van alleen jager-verzamelaars was veel langer."],
+    ["Zijn er nu nog jager-verzamelaars?", "Ja, bijvoorbeeld het volk van de Khoisan in Zuid-Afrika.", "a13"],
+    ["Waarom is het Amazone-oerwoud belangrijk?", "Het is belangrijk voor het klimaat van de hele wereld."],
+    ["Waarom wordt het Amazonegebied bedreigd?", "Mensen brengen steeds grotere delen in cultuur."],
+    ["Wat gebeurt er in het Amazonegebied dat al eerder gebeurde?", "Natuur wordt in cultuur gebracht. In Europa is dat al veel eerder gebeurd."],
+    ["Wat betekent v.C.?", "Voor Christus: jaren vóór het jaar 0."],
+  ]);
+  add(6, [
+    ["jager-verzamelaar", "Iemand die leeft van jagen en voedsel verzamelen in de natuur."],
+    ["opgraving", "Een plek waar oude spullen uit de grond worden gehaald.", "opgraving"],
+    ["fuik", "Een val voor vissen van touw en biezen.", "a4"],
+    ["ongeschreven bron", "Een bron zonder tekst, zoals een voorwerp."],
+    ["prehistorisch", "Uit de tijd voordat mensen konden schrijven."],
+    ["nomade", "Iemand die rondtrekt en geen vaste woonplaats heeft."],
+    ["steentijd", "De tijd van jagers en boeren, met veel stenen werktuigen."],
+    ["landbouw", "Voedsel verbouwen op akkers en dieren houden."],
+    ["vee", "Tamme dieren voor melk, vlees of wol."],
+    ["aardewerk", "Potten, bekers en schalen van gebakken klei.", "a10"],
+    ["natuur", "Alles wat vanzelf ontstaat en groeit."],
+    ["cultuur", "Alles wat door mensen wordt bedacht en gemaakt."],
+    ["bevolkingsgroei", "Het aantal mensen wordt groter."],
+  ]);
+  return out;
+})();
+
 </script>
 <script>
 "use strict";
@@ -868,7 +1126,7 @@ const app = $("#app");
 
 /* ============ Voortgang (lokaal in de browser) ============ */
 const KEY = "tijdreis-prehistorie-v1";
-const defaults = () => ({ rounds: {}, wrong: {}, toetsen: {}, streak: { count: 0, last: "" }, herhaal: 0, sound: true });
+const defaults = () => ({ rounds: {}, wrong: {}, toetsen: {}, streak: { count: 0, last: "" }, herhaal: 0, sound: true, flits: {} });
 let S = defaults();
 function load() {
   try { const r = localStorage.getItem(KEY); if (r) S = Object.assign(defaults(), JSON.parse(r)); } catch (e) { /* geen opslag beschikbaar */ }
@@ -1156,7 +1414,7 @@ window.addEventListener("popstate", (e) => { Voice.stop(); V = e.state && e.stat
 try { history.replaceState({ V }, ""); } catch (e) { /* */ }
 
 function render() {
-  const f = { home: renderHome, level: renderLevel, run: renderRun, summary: renderSummary, toets: renderToets, review: renderReview, toetsdone: renderToetsDone }[V.screen] || renderHome;
+  const f = { home: renderHome, level: renderLevel, run: renderRun, summary: renderSummary, toets: renderToets, review: renderReview, toetsdone: renderToetsDone, flits: renderFlits }[V.screen] || renderHome;
   if ((V.screen === "run" || V.screen === "summary") && !R) { V = { screen: "home" }; return renderHome(); }
   if ((V.screen === "toets" || V.screen === "review" || V.screen === "toetsdone") && !T) { V = { screen: "home" }; return renderHome(); }
   document.body.dataset.screen = V.screen;
@@ -1189,8 +1447,9 @@ function renderHome() {
   const unlocked = allDone();
   const tcards = unlocked ? TOETSEN.map((t) => {
     const rec = S.toetsen[t.id] || {}, c = rec.cur, busy = c && c.phase !== "done";
-    const status = busy ? `Bezig · ${c.answers.filter((a, i) => (t.qs[i].type === "mc" ? a !== null : (c.texts[i] || "").trim())).length}/${t.qs.length} beantwoord` : rec.best ? `Beste: ${rec.best.score}/${rec.best.max} · cijfer ${fmtGrade(rec.best.grade)}` : "Nog niet gemaakt";
-    return `<li class="tcard"><div><b>${esc(t.title)}</b><span>${esc(t.sub)}</span><em>${status}</em></div><button type="button" class="btn small" data-act="toets" data-t="${t.id}">${busy ? "Verder" : rec.best ? "Opnieuw" : "Start"}</button></li>`;
+    const stale = busy && ((c.v || 1) !== (t.v || 1) || c.answers.length !== t.qs.length);
+    const status = busy && !stale ? `Bezig · ${t.qs.filter((q, i) => qAnswered(q, c, i)).length}/${t.qs.length} beantwoord` : rec.best ? `Beste: ${fmtP(rec.best.score)}/${fmtP(rec.best.max)} · cijfer ${fmtGrade(rec.best.grade)}` : "Nog niet gemaakt";
+    return `<li class="tcard"><div><b>${esc(t.title)}</b><span>${esc(t.sub)}</span><em>${status}</em></div><button type="button" class="btn small" data-act="toets" data-t="${t.id}">${busy && !stale ? "Verder" : rec.best ? "Opnieuw" : "Start"}</button></li>`;
   }).join("") : "";
   app.innerHTML = `<div class="home">
   <header class="top"><div class="brand"><span class="logo" aria-hidden="true">🦣</span><div><h1>Tijdreis</h1><p>Jagers &amp; boeren · B1 A, B en C</p></div></div>
@@ -1200,7 +1459,69 @@ function renderHome() {
   <h2 class="sec">Levels</h2><ol class="path">${lv}</ol>
   <h2 class="sec">Oefentoetsen</h2>
   ${unlocked ? `<ul class="tlist">${tcards}</ul>` : `<div class="tlock"><span>🔒</span><p>Rond alle ${LEVELS.length} levels af om de <b>4 oefentoetsen</b> vrij te spelen. Nog ${LEVELS.filter((L) => !levelDone(L.id)).length} te gaan.</p></div>`}
+  <h2 class="sec">Flitskaarten</h2>
+  <button type="button" class="herhaal fl" data-act="flits"><span class="h-e">🃏</span><span><b>Flitskaarten</b><small>Oefen alle stof met kaartjes · ${FLITS.length} kaarten · ${FLITS.filter((c) => fKnown(c.id)).length} gekend</small></span></button>
   <p class="foot">Je voortgang wordt bewaard in deze browser.</p></div>`;
+}
+
+/* ============ Flitskaarten ============ */
+let F = null; const fOpts = { onlyNew: false };
+const FL = Object.fromEntries(FLITS.map((c) => [c.id, c]));
+const fKnown = (id) => !!(S.flits && S.flits[id]);
+const fDeck = (l) => FLITS.filter((c) => !l || c.l === l);
+function startFlits(l) {
+  let cards = fDeck(l);
+  if (fOpts.onlyNew) { const n = cards.filter((c) => !fKnown(c.id)); if (n.length) cards = n; else toast("Je kent alle kaarten al! Ze komen allemaal nog eens langs. 🎉"); }
+  F = { l, total: cards.length, queue: shuffle(cards).map((c) => c.id), flipped: false, first: {}, cleared: 0, done: false };
+  go("flits", { s: "play", l });
+}
+function flitsPick() {
+  const known = FLITS.filter((c) => fKnown(c.id)).length;
+  app.innerHTML = `<div class="lvl" style="--lc:#8B5CF6"><header class="top2"><button type="button" class="iconbtn" data-act="home" aria-label="Terug">‹</button><span>Flitskaarten</span><span class="stat">🃏 ${known}/${FLITS.length}</span></header>
+  <section class="hero"><div class="bigem" aria-hidden="true">🃏</div><h1>Flitskaarten</h1><p>Lees de vraag, bedenk het antwoord en draai de kaart om. Kaarten die je niet wist, komen straks terug.</p></section>
+  <label class="flopt"><input type="checkbox" id="fonly" ${fOpts.onlyNew ? "checked" : ""}> <span>Alleen kaarten die ik nog niet ken</span></label>
+  <button type="button" class="herhaal fl" data-act="fdeck" data-l="0"><span class="h-e">🃏</span><span><b>Alle kaarten</b><small>${FLITS.length} kaarten · ${known} gekend</small></span></button>
+  <h2 class="sec">Per level</h2>
+  <ul class="fdecks">${LEVELS.map((L) => { const d = fDeck(L.id), k = d.filter((c) => fKnown(c.id)).length; return `<li style="--lc:${L.color}"><button type="button" class="lv-btn" data-act="fdeck" data-l="${L.id}"><span class="ring" style="--p:${Math.round((100 * k) / d.length)}"><span class="em">${L.emoji}</span></span><span class="lv-txt"><span class="lv-t">${esc(L.title)}</span><span class="lv-s">${d.length} kaarten · ${k} gekend</span></span><span class="chev">›</span></button></li>`; }).join("")}</ul>
+  <p class="note"><button type="button" class="link" data-act="freset">Wis wat ik al gekend heb</button></p></div>`;
+  $("#fonly").onchange = (e) => { fOpts.onlyNew = e.target.checked; };
+}
+function ffoot() {
+  return F.flipped
+    ? `<div class="fbtns"><button type="button" class="btn big ghost" data-act="fagain">😕 Nog oefenen</button><button type="button" class="btn big green" data-act="fknow">😀 Wist ik</button></div>`
+    : `<button type="button" class="btn big" data-act="flip">Draai om ↻</button>`;
+}
+function renderFlits() {
+  if (V.s !== "play" || !F) return flitsPick();
+  if (!F.queue.length) return flitsDone();
+  const c = FL[F.queue[0]], L = LEVELS[c.l - 1], pct = Math.round((100 * F.cleared) / F.total);
+  app.innerHTML = `<div class="run flits" style="--lc:${L.color}"><header class="run-top"><button type="button" class="iconbtn" data-act="flitsstop" aria-label="Stoppen">✕</button><div class="bar" role="progressbar" aria-label="Voortgang"><i style="width:${pct}%"></i></div><div class="cnt">${F.cleared}/${F.total}</div></header>
+  <main class="run-main"><div class="qwrap"><p class="fl-tag">${L.emoji} ${esc(L.title)}</p>
+  <div class="fcard ${F.flipped ? "flip" : ""}" id="fcard" role="button" tabindex="0" data-act="flip" aria-label="Kaart omdraaien">
+    <div class="fface front">${c.img ? IMGH(c.img, "", "fimg") : ""}<b class="fq">${esc(c.front)}</b><small>Tik om om te draaien</small></div>
+    <div class="fface back"><small>Antwoord</small><b class="fa">${esc(c.back)}</b></div></div>
+  ${"speechSynthesis" in window ? `<button type="button" class="link fsay" data-act="fsay">🔊 Lees voor</button>` : ""}</div></main>
+  <footer class="run-foot" id="ffoot">${ffoot()}</footer></div>`;
+}
+function flitsDone() {
+  if (!F.done) { F.done = true; touchStreak(); save(); sfx("win"); burst(); }
+  const ids = Object.keys(F.first), good = ids.filter((id) => F.first[id]).length, again = ids.filter((id) => !F.first[id]).map((id) => FL[id]);
+  app.innerHTML = `<div class="sum"><div class="sum-e" aria-hidden="true">🃏</div><h1>Kaarten klaar!</h1><div class="score">${good} / ${F.total}<small>in één keer goed</small></div>
+  ${again.length ? `<div class="missed"><h3>Nog even oefenen</h3><ul>${again.map((c) => `<li>${esc(c.front)}</li>`).join("")}</ul></div>` : `<p class="perfect">Alles in één keer goed! 🌟</p>`}
+  <div class="sum-btns"><button type="button" class="btn big" data-act="fdeck" data-l="${F.l}">Nog een keer</button><button type="button" class="btn ghost" data-act="flits">Andere kaarten kiezen</button><button type="button" class="btn ghost" data-act="home">Terug naar de kaart</button></div></div>`;
+}
+function frate(ok) {
+  if (!F || !F.queue.length || !F.flipped) return;
+  const id = F.queue.shift();
+  if (!(id in F.first)) { F.first[id] = ok; if (ok) S.flits[id] = true; else delete S.flits[id]; }
+  if (ok) { F.cleared++; sfx("ok"); } else F.queue.splice(Math.min(F.queue.length, 3), 0, id);
+  F.flipped = false; save(); renderFlits(); window.scrollTo(0, 0);
+}
+function fflip() {
+  if (!F || !F.queue.length) return;
+  F.flipped = !F.flipped;
+  const el = $("#fcard"); if (el) el.classList.toggle("flip", F.flipped);
+  const ft = $("#ffoot"); if (ft) ft.innerHTML = ffoot();
 }
 
 /* ============ Levelscherm ============ */
@@ -1232,6 +1553,7 @@ function renderLevel() {
   <section class="hero"><div class="bigem" aria-hidden="true">${L.emoji}</div><h1>${esc(L.title)}</h1><p>${esc(L.intro)}</p></section>
   <details class="study" ${tried ? "" : "open"}><summary>📖 Leerkaart <small>eerst even lezen</small></summary><div class="study-in">${studyHtml(L)}</div></details>
   <h2 class="sec">Rondes</h2><ol class="rounds">${rounds}</ol>
+  <button type="button" class="btn ghost flbtn" data-act="flitslevel" data-l="${L.id}">🃏 Flitskaarten van dit level</button>
   <p class="note">Je gaat pas door naar de volgende ronde en het volgende level als je minstens <b>75%</b> haalt. De moeilijkheid gaat omhoog: van meerkeuze naar open vragen.</p></div>`;
 }
 
@@ -1354,75 +1676,130 @@ function renderSummary() {
 }
 
 /* ============ Oefentoetsen ============ */
+const fmtP = (x) => String(Math.round(x * 100) / 100).replace(".", ",");
+const qPts = (q) => q.pts || 1;
+const fullArr = (a, n) => Array.isArray(a) && a.length === n && a.every((v) => v !== null && v !== undefined);
+function qAnswered(q, c, k) {
+  const a = c.answers[k];
+  if (q.type === "mc") return a !== null && a !== undefined;
+  if (q.type === "multi") return fullArr(a, q.items.length);
+  if (q.type === "match") return fullArr(a, q.terms.length);
+  if (q.type === "order") return Array.isArray(a) && a.length === q.items.length;
+  return (c.texts[k] || "").trim().length > 0;
+}
+function qBlank(q, c, k) {
+  const a = c.answers[k];
+  if (q.type === "mc") return a === null || a === undefined;
+  if (q.type === "open") return !(c.texts[k] || "").trim();
+  return !Array.isArray(a) || a.length === 0 || a.every((v) => v === null || v === undefined);
+}
+/* punten voor één vraag (0 t/m qPts) */
+function qGot(q, k, c) {
+  const a = c.answers[k];
+  if (q.type === "mc") return a === q.ans ? 1 : 0;
+  if (q.type === "multi") return Array.isArray(a) ? a.filter((v, i) => v === q.items[i].v).length / q.items.length : 0;
+  if (q.type === "match") return Array.isArray(a) ? a.filter((v, i) => v === q.key[i]).length / q.terms.length : 0;
+  if (q.type === "order") { if (!Array.isArray(a)) return 0; const ok = a.filter((v, i) => v === q.key[i]).length; return ok === q.key.length ? 1 : ok >= Math.ceil(q.key.length / 2) ? 0.5 : 0; }
+  return c.marks[k] === undefined ? 0 : c.marks[k] * qPts(q);
+}
+const TAGS = { mc: "Meerkeuze", multi: "Juist of onjuist", match: "Koppelen", order: "Volgorde" };
+const tagOf = (q) => TAGS[q.type] || (q.deep ? "Verdiepende vraag" : q.kort ? "Korte open vraag" : "Open vraag");
+const ptsBadge = (q) => (qPts(q) > 1 ? `<span class="ptsb">${qPts(q)} punten</span>` : "");
+
 function startToets(id, fresh) {
-  const def = TOETSEN.find((t) => t.id === id), rec = (S.toetsen[id] = S.toetsen[id] || {});
-  if (!rec.cur || rec.cur.phase === "done" || fresh) rec.cur = { answers: def.qs.map(() => null), texts: def.qs.map(() => ""), idx: 0, phase: "doing", marks: {} };
+  const def = TOETSEN.find((t) => t.id === id), rec = (S.toetsen[id] = S.toetsen[id] || {}), ver = def.v || 1;
+  if (!rec.cur || rec.cur.phase === "done" || fresh || (rec.cur.v || 1) !== ver || rec.cur.answers.length !== def.qs.length) rec.cur = { v: ver, answers: def.qs.map(() => null), texts: def.qs.map(() => ""), idx: 0, phase: "doing", marks: {} };
   T = { def, rec, filter: "all", rpos: 0 }; save();
   go(rec.cur.phase === "review" ? "review" : "toets");
 }
 const qBody = (q) => `${q.img ? IMGH(q.img, "", "qimg") : ""}${q.gallery ? `<div class="gallery">${q.gallery.map((k, i) => `<figure>${IMGH(k, "Afbeelding " + (i + 1))}<figcaption>${i + 1}</figcaption></figure>`).join("")}</div>` : ""}`;
-function renderToets() {
-  const c = T.rec.cur, qs = T.def.qs, i = c.idx, q = qs[i], n = qs.length;
-  const isAns = (k) => (qs[k].type === "mc" ? c.answers[k] !== null : (c.texts[k] || "").trim().length > 0);
-  const grid = qs.map((_, k) => `<button type="button" class="gn ${k === i ? "cur" : ""} ${isAns(k) ? "ans" : ""}" data-act="tgo" data-k="${k}" aria-label="Vraag ${k + 1}${isAns(k) ? ", beantwoord" : ""}">${k + 1}</button>`).join("");
-  let ans;
-  if (q.type === "mc") {
-    const order = q.opts.map((_, k) => k);
-    ans = mcOptionsHtml(q, order, (pos) => (c.answers[i] === pos ? " sel" : ""));
-  } else ans = `<div id="qa" class="qa">${Voice.area({ text: c.texts[i] || "", mode: "type" }, true)}</div>`;
-  app.innerHTML = `<div class="run toets" style="--lc:#5B4BFF"><header class="run-top"><button type="button" class="iconbtn" data-act="texit" aria-label="Opslaan en stoppen">✕</button><div class="ttitle"><b>${esc(T.def.title)}</b><span>Vraag ${i + 1} van ${n}</span></div></header>
-  <div class="grid">${grid}</div>
-  <main class="run-main"><div class="qwrap"><div class="qcard"><div class="qtop"><span class="tag">${q.type === "mc" ? "Meerkeuze" : "Open vraag"}</span>${"speechSynthesis" in window ? `<button type="button" class="tts" data-act="tsay" aria-label="Lees voor">🔊</button>` : ""}</div>${qBody(q)}<h2 class="qt">${md(q.q)}</h2>${q.type === "mc" ? ans : ""}${q.type === "open" ? ans : ""}</div></div></main>
-  <footer class="run-foot tnav"><button type="button" class="btn ghost" data-act="tprev" ${i === 0 ? "disabled" : ""}>‹ Vorige</button>${i < n - 1 ? `<button type="button" class="btn big" data-act="tnext">Volgende ›</button>` : `<button type="button" class="btn big green" data-act="tsubmit">Inleveren ✔</button>`}</footer></div>`;
-  if (q.type === "mc") {
-    $$(".opt").forEach((b) => (b.onclick = () => { c.answers[i] = +b.dataset.i; save(); $$(".opt").forEach((x) => x.classList.toggle("sel", x === b)); $$(".gn")[i].classList.add("ans"); }));
+const defsHtml = (q) => `<ol class="defs">${q.defs.map((d, x) => `<li><b>${LET[x]}</b><span>${esc(d)}</span></li>`).join("")}</ol>`;
+function toetsAnsHtml(q, c, i) {
+  const a = c.answers[i];
+  if (q.type === "mc") return mcOptionsHtml(q, q.opts.map((_, k) => k), (pos) => (a === pos ? " sel" : ""));
+  if (q.type === "multi") { const arr = a || []; return `<div class="stlist">${q.items.map((it, j) => `<div class="stel"><p>${md(it.s)}</p><div class="tfpair"><button type="button" class="chip tfb${arr[j] === true ? " on" : ""}" data-j="${j}" data-v="1">Juist</button><button type="button" class="chip tfb${arr[j] === false ? " on" : ""}" data-j="${j}" data-v="0">Onjuist</button></div></div>`).join("")}</div>`; }
+  if (q.type === "match") { const arr = a || []; return `${defsHtml(q)}<div class="mlist">${q.terms.map((t, j) => `<label class="mrow"><span>${esc(t)}</span><select class="msel" data-j="${j}"><option value="">Kies…</option>${q.defs.map((_, x) => `<option value="${x}"${arr[j] === x ? " selected" : ""}>${LET[x]}</option>`).join("")}</select></label>`).join("")}</div>`; }
+  if (q.type === "order") return `<div class="ord-ans" id="oa"></div><div class="ord-pool" id="op"></div>`;
+  return `<div id="qa" class="qa">${Voice.area({ text: c.texts[i] || "", mode: "type" }, true)}</div>`;
+}
+function toetsBind(q, c, i) {
+  const upd = () => { save(); const g = $$(".gn")[i]; if (g) g.classList.toggle("ans", qAnswered(q, c, i)); };
+  const arrOf = (n) => (Array.isArray(c.answers[i]) ? c.answers[i].slice() : Array(n).fill(null));
+  if (q.type === "mc") $$(".opt").forEach((b) => (b.onclick = () => { c.answers[i] = +b.dataset.i; $$(".opt").forEach((x) => x.classList.toggle("sel", x === b)); upd(); }));
+  else if (q.type === "multi") $$(".tfb").forEach((b) => (b.onclick = () => { const arr = arrOf(q.items.length); arr[+b.dataset.j] = b.dataset.v === "1"; c.answers[i] = arr; $$(".tfb").forEach((x) => { if (x.dataset.j === b.dataset.j) x.classList.toggle("on", x === b); }); upd(); }));
+  else if (q.type === "match") $$(".msel").forEach((s) => (s.onchange = () => { const arr = arrOf(q.terms.length); arr[+s.dataset.j] = s.value === "" ? null : +s.value; c.answers[i] = arr; upd(); }));
+  else if (q.type === "order") {
+    const picked = Array.isArray(c.answers[i]) ? c.answers[i].slice() : [];
+    const draw = () => {
+      $("#oa").innerHTML = picked.length ? picked.map((idx, p) => `<button type="button" class="ochip placed" data-p="${p}"><span class="num">${p + 1}</span>${esc(q.items[idx])}</button>`).join("") : `<p class="ord-ph">Tik de stappen in de goede volgorde. Tik op een stap om hem weg te halen.</p>`;
+      $("#op").innerHTML = q.items.map((_, x) => x).filter((x) => !picked.includes(x)).map((x) => `<button type="button" class="ochip" data-i="${x}">${esc(q.items[x])}</button>`).join("");
+      $$("#oa .placed").forEach((b) => (b.onclick = () => { picked.splice(+b.dataset.p, 1); c.answers[i] = picked.slice(); draw(); upd(); }));
+      $$("#op .ochip").forEach((b) => (b.onclick = () => { picked.push(+b.dataset.i); c.answers[i] = picked.slice(); draw(); upd(); }));
+    };
+    draw();
   } else {
     const st = { text: c.texts[i] || "", mode: "type", listening: false };
     Voice.wire($("#qa"), st, () => { c.texts[i] = st.text; save(); $$(".gn")[i].classList.toggle("ans", st.text.trim().length > 0); }, true);
   }
 }
+function renderToets() {
+  const c = T.rec.cur, qs = T.def.qs, i = c.idx, q = qs[i], n = qs.length;
+  const grid = qs.map((qq, k) => { const a = qAnswered(qq, c, k); return `<button type="button" class="gn ${k === i ? "cur" : ""} ${a ? "ans" : ""}" data-act="tgo" data-k="${k}" aria-label="Vraag ${k + 1}${a ? ", beantwoord" : ""}">${k + 1}</button>`; }).join("");
+  app.innerHTML = `<div class="run toets" style="--lc:#5B4BFF"><header class="run-top"><button type="button" class="iconbtn" data-act="texit" aria-label="Opslaan en stoppen">✕</button><div class="ttitle"><b>${esc(T.def.title)}</b><span>Vraag ${i + 1} van ${n}</span></div></header>
+  <div class="grid">${grid}</div>
+  <main class="run-main"><div class="qwrap"><div class="qcard${q.deep ? " deep" : ""}"><div class="qtop"><span class="tag">${tagOf(q)}</span>${ptsBadge(q)}${"speechSynthesis" in window ? `<button type="button" class="tts" data-act="tsay" aria-label="Lees voor">🔊</button>` : ""}</div>${qBody(q)}<h2 class="qt">${md(q.q)}</h2>${toetsAnsHtml(q, c, i)}</div></div></main>
+  <footer class="run-foot tnav"><button type="button" class="btn ghost" data-act="tprev" ${i === 0 ? "disabled" : ""}>‹ Vorige</button>${i < n - 1 ? `<button type="button" class="btn big" data-act="tnext">Volgende ›</button>` : `<button type="button" class="btn big green" data-act="tsubmit">Inleveren ✔</button>`}</footer></div>`;
+  toetsBind(q, c, i);
+}
 function submitToets(force) {
   const c = T.rec.cur, qs = T.def.qs;
-  const un = qs.filter((q, k) => (q.type === "mc" ? c.answers[k] === null : !(c.texts[k] || "").trim())).length;
-  if (un > 0 && !force) return modal(`<h3>Nog niet alles beantwoord</h3><p>Je hebt <b>${un}</b> ${un === 1 ? "vraag" : "vragen"} nog niet beantwoord. Wil je toch inleveren?</p><div class="mbtns"><button type="button" class="btn ghost" data-act="mclose">Nog even verder</button><button type="button" class="btn red" data-act="tforce">Toch inleveren</button></div>`);
+  const un = qs.filter((q, k) => !qAnswered(q, c, k)).length;
+  if (un > 0 && !force) return modal(`<h3>Nog niet alles beantwoord</h3><p>Je hebt <b>${un}</b> ${un === 1 ? "vraag" : "vragen"} nog niet (helemaal) beantwoord. Wil je toch inleveren?</p><div class="mbtns"><button type="button" class="btn ghost" data-act="mclose">Nog even verder</button><button type="button" class="btn red" data-act="tforce">Toch inleveren</button></div>`);
   c.phase = "review"; c.idx = 0; save(); T.filter = "all"; T.rpos = 0; go("review");
 }
-function toetsScore() {
-  const c = T.rec.cur; let score = 0;
-  T.def.qs.forEach((q, k) => { if (q.type === "mc") { if (c.answers[k] === q.ans) score += 1; } else if (c.marks[k] !== undefined) score += c.marks[k]; });
-  return score;
+const toetsMax = () => T.def.qs.reduce((a, q) => a + qPts(q), 0);
+function toetsScore() { const c = T.rec.cur; let s = 0; T.def.qs.forEach((q, k) => { s += qGot(q, k, c); }); return Math.round(s * 100) / 100; }
+function rlist() { const c = T.rec.cur; return T.def.qs.map((q, k) => k).filter((k) => T.filter === "all" || qGot(T.def.qs[k], k, c) < qPts(T.def.qs[k])); }
+function reviewBody(q, k, c) {
+  const verdictCls = (mine, ok) => (mine === null || mine === undefined ? "skip" : ok ? "good" : "bad");
+  const got = qGot(q, k, c), line = q.type === "open" ? "" : `<p class="ptsline">Punten: <b>${fmtP(got)}</b> van ${qPts(q)}</p>`;
+  if (q.type === "mc") {
+    const mine = c.answers[k];
+    const body = mcOptionsHtml(q, q.opts.map((_, i) => i), (pos) => (pos === q.ans ? " right" : pos === mine ? " wrong" : "")).replace(/<button/g, "<button disabled");
+    const verdict = mine === null ? `<span class="v skip">Niet beantwoord</span>` : mine === q.ans ? `<span class="v good">✅ Goed</span>` : `<span class="v bad">❌ Fout</span>`;
+    return `${body}<div class="verdict">${verdict}${mine !== null && mine !== q.ans ? `<span>Jouw antwoord: <b>${q.optImgs ? "afbeelding " + LET[mine] : esc(q.opts[mine])}</b></span>` : ""}</div><p class="why">💡 ${esc(q.why || "")}</p>`;
+  }
+  if (q.type === "multi") return `<div class="stlist">${q.items.map((it, j) => { const mine = (c.answers[k] || [])[j], ok = mine === it.v; return `<div class="stel ${verdictCls(mine, ok)}"><p>${md(it.s)}</p><div class="stv">${mine === null || mine === undefined ? "Niet beantwoord" : ok ? "✅ Goed" : "❌ Fout"} · het is <b>${it.v ? "juist" : "onjuist"}</b></div><small>💡 ${esc(it.why || "")}</small></div>`; }).join("")}</div>${line}`;
+  if (q.type === "match") return `${defsHtml(q)}<div class="stlist">${q.terms.map((t, j) => { const mine = (c.answers[k] || [])[j], ok = mine === q.key[j]; return `<div class="stel ${verdictCls(mine, ok)}"><p><b>${esc(t)}</b></p><div class="stv">Jouw keuze: <b>${mine === null || mine === undefined ? "–" : LET[mine]}</b> ${ok ? "✅" : `❌ goed is <b>${LET[q.key[j]]}</b>`}</div></div>`; }).join("")}</div>${line}`;
+  if (q.type === "order") {
+    const mine = Array.isArray(c.answers[k]) ? c.answers[k] : [];
+    return `<div class="ans-box"><h4>Jouw volgorde</h4>${mine.length ? `<ol class="olist">${mine.map((idx, p) => `<li class="${idx === q.key[p] ? "ok" : "no"}">${esc(q.items[idx])}</li>`).join("")}</ol>` : "<p><i>Niet beantwoord</i></p>"}</div><div class="ans-box model"><h4>Goede volgorde</h4><ol class="olist">${q.model.map((t) => `<li>${esc(t)}</li>`).join("")}</ol></div>${line}`;
+  }
+  const m = c.marks[k], P = qPts(q);
+  const labels = [[1, "👍 Goed", "m1"], [0.5, "🤏 Half", "m5"], [0, "👎 Niet goed", "m0"]].map(([v, t, cl]) => [v, P > 1 ? `${t} (${fmtP(v * P)})` : t, cl]);
+  return `<div class="ans-box"><h4>Jouw antwoord</h4><p>${(c.texts[k] || "").trim() ? esc(c.texts[k]) : "<i>Niet beantwoord</i>"}</p></div><div class="ans-box model"><h4>Voorbeeldantwoord</h4><p>${esc(q.model)}</p></div>
+  ${q.crit ? `<div class="ans-box crit"><h4>Hierop let je bij het nakijken</h4><ul>${q.crit.map((x) => `<li>${esc(x)}</li>`).join("")}</ul></div>` : ""}
+  <p class="mark-q">Kijk samen na: hoeveel punten krijgt dit antwoord?</p><div class="marks">${labels.map(([v, t, cl]) => `<button type="button" class="mk ${cl} ${m === v ? "on" : ""}" data-act="mark" data-v="${v}" data-k="${k}">${t}</button>`).join("")}</div>`;
 }
-function rlist() { const c = T.rec.cur; return T.def.qs.map((q, k) => k).filter((k) => T.filter === "all" || (T.def.qs[k].type === "mc" ? c.answers[k] !== T.def.qs[k].ans : c.marks[k] !== 1)); }
 function renderReview() {
   const c = T.rec.cur, qs = T.def.qs, list = rlist();
   if (!list.length) { T.filter = "all"; return renderReview(); }
   T.rpos = Math.min(T.rpos, list.length - 1); const k = list[T.rpos], q = qs[k];
-  const state = (j) => { const x = qs[j]; if (x.type === "mc") return c.answers[j] === null ? "skip" : c.answers[j] === x.ans ? "good" : "bad"; const m = c.marks[j]; return m === undefined ? "todo" : m === 1 ? "good" : m === 0 ? "bad" : "half"; };
+  const state = (j) => { const x = qs[j]; if (x.type === "open") { const m = c.marks[j]; return m === undefined ? "todo" : m === 1 ? "good" : m === 0 ? "bad" : "half"; } if (qBlank(x, c, j)) return "skip"; const g = qGot(x, j, c) / qPts(x); return g >= 1 ? "good" : g <= 0 ? "bad" : "half"; };
   const grid = qs.map((_, j) => `<button type="button" class="gn ${state(j)} ${j === k ? "cur" : ""}" data-act="rgo" data-k="${j}" aria-label="Vraag ${j + 1}">${j + 1}</button>`).join("");
-  let body;
-  if (q.type === "mc") {
-    const order = q.opts.map((_, i) => i), mine = c.answers[k];
-    body = mcOptionsHtml(q, order, (pos) => (pos === q.ans ? " right" : pos === mine ? " wrong" : "")).replace(/<button/g, "<button disabled");
-    const verdict = mine === null ? `<span class="v skip">Niet beantwoord</span>` : mine === q.ans ? `<span class="v good">✅ Goed</span>` : `<span class="v bad">❌ Fout</span>`;
-    body += `<div class="verdict">${verdict}${mine !== null && mine !== q.ans ? `<span>Jouw antwoord: <b>${q.optImgs ? "afbeelding " + LET[mine] : esc(q.opts[mine])}</b></span>` : ""}</div><p class="why">💡 ${esc(q.why || "")}</p>`;
-  } else {
-    const m = c.marks[k];
-    body = `<div class="ans-box"><h4>Jouw antwoord</h4><p>${(c.texts[k] || "").trim() ? esc(c.texts[k]) : "<i>Niet beantwoord</i>"}</p></div><div class="ans-box model"><h4>Voorbeeldantwoord</h4><p>${esc(q.model)}</p></div>
-    <p class="mark-q">Kijk samen na: hoeveel punten krijgt dit antwoord?</p><div class="marks">${[[1, "👍 Goed", "m1"], [0.5, "🤏 Half", "m5"], [0, "👎 Niet goed", "m0"]].map(([v, t, cl]) => `<button type="button" class="mk ${cl} ${m === v ? "on" : ""}" data-act="mark" data-v="${v}" data-k="${k}">${t}</button>`).join("")}</div>`;
-  }
   const open = qs.some((x, j) => x.type === "open" && c.marks[j] === undefined);
   const last = T.rpos === list.length - 1;
-  app.innerHTML = `<div class="run toets review" style="--lc:#14B8A6"><header class="run-top"><button type="button" class="iconbtn" data-act="texit" aria-label="Opslaan en stoppen">✕</button><div class="ttitle"><b>Samen nakijken</b><span>Punten tot nu toe: ${String(toetsScore()).replace(".", ",")} van ${qs.length}</span></div></header>
+  app.innerHTML = `<div class="run toets review" style="--lc:#14B8A6"><header class="run-top"><button type="button" class="iconbtn" data-act="texit" aria-label="Opslaan en stoppen">✕</button><div class="ttitle"><b>Samen nakijken</b><span>Punten tot nu toe: ${fmtP(toetsScore())} van ${fmtP(toetsMax())}</span></div></header>
   <div class="grid">${grid}</div><div class="rfilter"><button type="button" class="pill ${T.filter === "all" ? "on" : ""}" data-act="rfilter" data-f="all">Alle vragen</button><button type="button" class="pill ${T.filter === "wrong" ? "on" : ""}" data-act="rfilter" data-f="wrong">Alleen wat niet goed was</button></div>
-  <main class="run-main"><div class="qwrap"><div class="qcard"><div class="qtop"><span class="tag">Vraag ${k + 1} van ${qs.length}</span></div>${qBody(q)}<h2 class="qt">${md(q.q)}</h2>${body}</div></div></main>
+  <main class="run-main"><div class="qwrap"><div class="qcard${q.deep ? " deep" : ""}"><div class="qtop"><span class="tag">Vraag ${k + 1} van ${qs.length} · ${tagOf(q)}</span>${ptsBadge(q)}</div>${qBody(q)}<h2 class="qt">${md(q.q)}</h2>${reviewBody(q, k, c)}</div></div></main>
   <footer class="run-foot tnav"><button type="button" class="btn ghost" data-act="rprev" ${T.rpos === 0 ? "disabled" : ""}>‹ Vorige</button>${last ? `<button type="button" class="btn big green" data-act="rfinish" ${open ? "disabled" : ""}>${open ? "Kijk eerst de open vragen na" : "Afronden ✔"}</button>` : `<button type="button" class="btn big" data-act="rnext">Volgende ›</button>`}</footer></div>`;
 }
 function finishToets() {
-  const c = T.rec.cur, qs = T.def.qs, score = toetsScore(), max = qs.length, grade = Math.round((1 + (9 * score) / max) * 10) / 10;
+  const c = T.rec.cur, qs = T.def.qs, score = toetsScore(), max = toetsMax(), grade = Math.round((1 + (9 * score) / max) * 10) / 10;
   const topics = {};
-  qs.forEach((q, k) => { const t = q.t; topics[t] = topics[t] || { ok: 0, n: 0 }; topics[t].n++; topics[t].ok += q.type === "mc" ? (c.answers[k] === q.ans ? 1 : 0) : c.marks[k] || 0; });
+  qs.forEach((q, k) => { const t = q.t; topics[t] = topics[t] || { ok: 0, n: 0 }; topics[t].n += qPts(q); topics[t].ok += qGot(q, k, c); });
   const res = { score, max, grade, topics }; c.phase = "done"; c.result = res;
-  if (!T.rec.best || score >= T.rec.best.score) T.rec.best = { score, max, grade };
+  if (!T.rec.best || score / max >= T.rec.best.score / T.rec.best.max) T.rec.best = { score, max, grade };
   touchStreak(); save(); sfx("win"); if (grade >= 5.5) burst(); go("toetsdone");
 }
 function renderToetsDone() {
@@ -1430,7 +1807,7 @@ function renderToetsDone() {
   const weak = Object.entries(r.topics).filter(([t, v]) => v.n && v.ok / v.n < 0.75 && LEVELS[t - 1]).map(([t]) => +t);
   const good = Object.entries(r.topics).filter(([t, v]) => v.n && v.ok / v.n >= 0.75 && LEVELS[t - 1]).map(([t]) => +t);
   const emo = r.grade >= 8 ? "🏆" : r.grade >= 5.5 ? "🎉" : "💪";
-  app.innerHTML = `<div class="sum"><div class="sum-e" aria-hidden="true">${emo}</div><h1>${esc(T.def.title)} klaar!</h1><div class="score">${String(r.score).replace(".", ",")} / ${r.max}<small>punten</small></div>
+  app.innerHTML = `<div class="sum"><div class="sum-e" aria-hidden="true">${emo}</div><h1>${esc(T.def.title)} klaar!</h1><div class="score">${fmtP(r.score)} / ${fmtP(r.max)}<small>punten</small></div>
   <div class="grade"><span>Cijfer (schatting)</span><b>${fmtGrade(r.grade)}</b></div>
   ${good.length ? `<div class="missed good"><h3>Dit gaat goed 👍</h3><ul>${good.map((t) => `<li>${LEVELS[t - 1].emoji} ${esc(LEVELS[t - 1].title)}</li>`).join("")}</ul></div>` : ""}
   ${weak.length ? `<div class="missed"><h3>Hier kun je nog op oefenen</h3><ul class="links">${weak.map((t) => `<li><button type="button" class="linkbtn" data-act="level" data-l="${t}">${LEVELS[t - 1].emoji} ${esc(LEVELS[t - 1].title)} ›</button></li>`).join("")}</ul></div>` : `<p class="perfect">Alles onder de knie! 🌟</p>`}
@@ -1483,6 +1860,13 @@ const ACT = {
   rnext: () => { T.rpos++; renderReview(); window.scrollTo(0, 0); },
   rfilter: (t) => { T.filter = t.dataset.f; T.rpos = 0; renderReview(); },
   mark: (t) => { T.rec.cur.marks[+t.dataset.k] = +t.dataset.v; save(); renderReview(); },
+  flits: () => { F = null; go("flits", { s: "pick" }); },
+  flitslevel: (t) => startFlits(+t.dataset.l),
+  fdeck: (t) => startFlits(+t.dataset.l),
+  flip: () => fflip(), fknow: () => frate(true), fagain: () => frate(false),
+  fsay: () => { if (F && F.queue.length) { const c = FL[F.queue[0]]; say(F.flipped ? c.back : c.front); } },
+  flitsstop: () => { F = null; go("flits", { s: "pick" }); },
+  freset: (t) => { if (t.dataset.sure) { S.flits = {}; save(); renderFlits(); toast("Gewist."); } else { t.dataset.sure = 1; t.textContent = "Weet je het zeker? Tik nog een keer"; } },
   rfinish: () => finishToets(),
   tnakijk: () => { T.rec.cur.phase = "review"; T.rec.cur.result = null; T.filter = "all"; T.rpos = 0; go("review"); },
 };
@@ -1492,6 +1876,11 @@ document.addEventListener("click", (e) => {
 });
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") closeModal();
+  if (V.screen === "flits" && V.s === "play" && F && F.queue.length && !e.target.closest("button, input, textarea, select")) {
+    if (e.key === " " || e.key === "Enter") { e.preventDefault(); fflip(); }
+    else if (F.flipped && (e.key === "ArrowRight" || e.key === "1")) frate(true);
+    else if (F.flipped && (e.key === "ArrowLeft" || e.key === "2")) frate(false);
+  }
   if (e.key === "Enter" && V.screen === "run" && R && !e.target.closest("textarea") && !e.target.closest("button")) {
     if (R.res) nextQ(); else if ($("#chk") && !$("#chk").disabled) check();
   }

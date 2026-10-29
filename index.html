@@ -921,7 +921,14 @@ const TOETSEN = [
   {
     id: 2, v: 2, title: "Oefentoets 2", sub: "20 vragen: meerkeuze, juist/onjuist, koppelen, volgorde en open vragen",
     qs: [
-      ...pk(1, [0, 2, 4, 8, 11, 13, 9, 15]),
+      tm("T2-A", 1, "Je ziet een tekening van een kamp van jager-verzamelaars. Welke bewering over deze tekening is het meest waarschijnlijk juist?", "De hutten en het gereedschap zijn gebaseerd op opgravingen, maar de kleding heeft de tekenaar deels moeten raden.", ["Alles op de tekening is precies zo geweest, want de tekenaar heeft het zelf gezien.", "De tekening is gemaakt door de jager-verzamelaars zelf om hun leefwijze vast te leggen.", "De tekening laat zien dat jager-verzamelaars al in dorpen woonden en vee hielden."], { img: "a5", why: "Spullen uit opgravingen zijn de basis. Kleding blijft niet bewaard, dus die moet de tekenaar raden." }),
+      tm("T2-B", 1, "Wat was GEEN kenmerk van de levenswijze van jager-verzamelaars?", "Ze verbouwden hun voedsel op akkers bij hun hut.", ["Ze trokken per seizoen naar andere plekken.", "Ze bezaten weinig spullen en de verschillen in rijkdom waren klein.", "Ze vingen vis met speren, harpoenen of een fuik."], { why: "Akkers horen bij de boeren. Jager-verzamelaars jaagden, visten en verzamelden." }),
+      tm("T2-C", 2, "Welke vraag over het verleden kun je alleen beantwoorden met een geschreven bron?", "Hoe heette de leider van een volk uit de oudheid?", ["Waarvan was dit stenen werktuig gemaakt?", "Hoe groot was een hut van een jager-verzamelaar?", "Welke dieren werden er gevangen met deze fuik?"], { why: "Namen en gedachten staan alleen in teksten. Voorwerpen vertellen vooral hoe mensen leefden." }),
+      tm("T2-D", 2, "Waarom zijn er van de steentijd vooral stenen voorwerpen teruggevonden?", "Steen blijft veel langer bewaard dan hout, bot of huiden, die mensen ook gebruikten.", ["Mensen gebruikten toen alleen steen, omdat ze andere materialen nog niet kenden.", "Archeologen zoeken alleen naar steen, omdat andere materialen niet interessant zijn.", "Steen was zeldzaam, dus mensen bewaarden het zorgvuldig in grotten."], { why: "Dat is ook waarom de naam steentijd niet helemaal klopt." }),
+      tm("T2-E", 3, "Betekent de uitvinding van de landbouw dat alle mensen in één klap boer werden?", "Nee, jager-verzamelaars en boeren leefden nog lang naast elkaar.", ["Ja, na 10.000 v.C. waren er geen jager-verzamelaars meer.", "Ja, want vanaf toen was jagen niet meer toegestaan.", "Nee, want de eerste boeren bleven rondtrekken met hun vee."], { img: "a11", why: "Op de tekening staan een jagerskamp en een boerendorp in dezelfde tijd. Niet alles veranderde ineens." }),
+      tm("T2-F", 3, "Op welke afbeelding zie je een situatie die bij boeren in de Prehistorie hoort?", "afbeelding A", ["afbeelding B", "afbeelding C", "afbeelding D"], { optImgs: ["a8", "a13", "a3", "t4"], why: "A is een dorp met boerenhuizen. B zijn jager-verzamelaars, C is een kano en D zijn wilde bizons." }),
+      tm("T2-G", 3, "Waarom kunnen sommige gefokte dieren niet meer zonder mensen?", "Door het fokken geven koeien veel melk en krijgen schapen veel wol, dus ze moeten gemolken of geschoren worden.", ["Wilde dieren hebben ze verjaagd, dus ze durven niet meer weg.", "Ze zijn zo klein geworden dat ze zelf geen voedsel meer vinden.", "Boeren hebben ze met houten hekken opgesloten."], { img: "a9", why: "Fokken maakt dieren nuttiger voor mensen, maar ook afhankelijker." }),
+      tm("T2-H", 4, "Op welke afbeeldingen zie je natuur, dus niet in cultuur gebracht?", "afbeelding 3 en 4", ["afbeelding 1 en 2", "afbeelding 2 en 3", "afbeelding 1 en 4"], { gallery: ["t1", "t2", "t3", "t4"], why: "Het bos (3) en de wilde bizons (4) zijn natuur. De sloot met weiland (1) en de akker (2) zijn door mensen gemaakt." }),
       tmulti(1, "Juist of onjuist? Kies bij elke stelling.", [
         ["Jager-verzamelaars verhuisden vaak, omdat de beste plekken per seizoen verschilden.", true, "Daarom heten ze nomaden."],
         ["Jager-verzamelaars hielden vee dat ze molken.", false, "Vee hoort bij de boeren."],
@@ -955,7 +962,14 @@ const TOETSEN = [
   {
     id: 3, v: 2, title: "Oefentoets 3", sub: "20 vragen: meerkeuze, juist/onjuist, koppelen, volgorde en open vragen",
     qs: [
-      ...pk(2, [1, 3, 6, 8, 9, 12, 14, 4]),
+      tm("T3-A", 1, "Waarom is het logisch dat jager-verzamelaars weinig bezit hadden?", "Wie vaak verhuist, kan niet meer meenemen dan hij kan dragen.", ["Hun leider verbood het hebben van eigen spullen.", "Ze kenden nog geen gereedschap en wapens.", "Boeren namen hun spullen af."], { why: "Nomaden moesten alles meenemen." }),
+      tm("T3-B", 1, "De kano uit Drenthe is bijna 10.000 jaar oud. Wat kun je daaruit afleiden?", "Mensen maakten al heel lang boten om te vissen en zich over water te verplaatsen.", ["De kano is van steen gemaakt, anders was hij niet zo lang bewaard gebleven.", "De kano is door de eerste boeren gebruikt om vee over te zetten.", "Jager-verzamelaars schreven al op waar ze gingen vissen."], { img: "a3", why: "De kano is van hout. Hij bleef bewaard doordat hij in natte grond lag." }),
+      tm("T3-C", 2, "Over de Prehistorie zijn bijna alleen ongeschreven bronnen. Wat is het gevolg daarvan?", "Veel vragen, bijvoorbeeld over wat mensen dachten, kunnen we niet goed beantwoorden.", ["We weten helemaal niets over de Prehistorie.", "We weten alles precies, want voorwerpen liegen niet.", "Onderzoekers gebruiken vooral verhalen die door de eeuwen heen zijn doorverteld."], { why: "Zonder teksten blijven veel vragen onbeantwoord." }),
+      tm("T3-D", 2, "Welke bron is GEEN ongeschreven bron?", "Het verhaal van Plinius over de terpbewoners", ["Een fuik uit een opgraving", "Visgraten en scherven uit een terp", "Een skelet"], { why: "Plinius schreef zijn verhaal op, dus het is een geschreven bron." }),
+      tm("T3-E", 3, "Op de foto zie je aardewerk. Waarvoor was dit handig voor boeren?", "Ze konden er voedsel in bewaren en eruit eten en drinken.", ["Ze gebruikten het als wapen bij de jacht.", "Het laat zien dat boeren al konden schrijven.", "Ze hakten er bomen mee om."], { img: "a10", why: "Aardewerk is gebakken klei: potten, bekers en schalen." }),
+      tm("T3-F", 3, "Welke zin over de eerste boeren is juist?", "Ze gebruikten nog stenen gereedschap, zoals een vuurstenen bijl met houten steel om bomen om te hakken.", ["Ze gebruikten alleen metalen gereedschap, anders konden ze geen akkers aanleggen.", "Ze hakten bomen om met een vuistbijl, want die heeft een lange steel.", "Ze legden akkers alleen aan op plekken waar geen bomen stonden."], { why: "Een vuistbijl heeft geen steel. De steentijd was niet voorbij toen de landbouw begon." }),
+      tm("T3-G", 4, "Wat is de beste verklaring voor het ontstaan van steden?", "Dorpen werden groter doordat de bevolking groeide en sommige groeiden uit tot steden.", ["Jager-verzamelaars bouwden steden bij hun jachtgebieden.", "Steden ontstonden toen boeren stopten met landbouw.", "Steden werden gebouwd om de natuur te beschermen."], { why: "Door de landbouw groeide de bevolking en werden dorpen groter." }),
+      tm("T3-H", 5, "Welke bewering over de tijdbalk is juist?", "De tijd met alleen jager-verzamelaars duurde veel langer dan de tijd sinds de landbouw.", ["De landbouw is even oud als de denkende mens.", "Het tijdvak jagers & boeren begint pas met de landbouw.", "Sinds de landbouw is meer tijd verstreken dan ervoor."], { img: "chart", why: "De denkende mens ontstond rond 300.000 v.C., de landbouw rond 10.000 v.C." }),
       tmulti(3, "Juist of onjuist? Het gaat over boeren.", [
         ["Boeren verbouwden zelf hun voedsel.", true, "Dat is het belangrijkste kenmerk."],
         ["Boeren trokken elk seizoen naar een nieuwe plek.", false, "Boeren woonden op een vaste plek."],
@@ -989,7 +1003,14 @@ const TOETSEN = [
   {
     id: 4, v: 2, title: "Oefentoets 4", sub: "20 vragen: meerkeuze, juist/onjuist, koppelen, volgorde en open vragen",
     qs: [
-      ...pk(3, [1, 2, 4, 5, 7, 9, 12, 14]),
+      tm("T4-A", 2, "Waarvan zijn de speerpunten rechts op de foto gemaakt en wat zegt dat over de naam ‘steentijd’?", "Van bot: mensen gebruikten naast steen ook andere materialen.", ["Van ijzer: de steentijd was toen al voorbij.", "Van steen: daarom heet het steentijd.", "Van hout: dat blijft het langst bewaard."], { img: "a7", why: "Naast steen werden bot, hout en huiden gebruikt." }),
+      tm("T4-B", 1, "Op deze afbeelding is de kleding van de jagers getekend. Hoe weet de tekenaar hoe die eruitzag?", "Dat weet hij niet zeker: kleding blijft niet bewaard, dus hij moet het deels raden.", ["Er zijn veel complete kledingstukken opgegraven.", "De jager-verzamelaars hebben het zelf opgeschreven.", "Boeren hebben de kleren van hun voorouders bewaard."], { img: "a6", why: "Stof en huiden vergaan snel." }),
+      tm("T4-C", 1, "Welke zin over nomaden is juist?", "Nomaden hebben geen vaste woonplaats en trekken rond, bijvoorbeeld op zoek naar voedsel.", ["Nomaden wonen in dorpen en trekken alleen in de zomer weg.", "Nomaden zijn boeren die hun akkers hebben verlaten.", "Nomaden zijn mensen die vee houden op één plek."], { why: "Jager-verzamelaars waren nomaden." }),
+      tm("T4-D", 3, "Wat hoort bij het leven van boeren in de Prehistorie en NIET bij dat van jager-verzamelaars?", "Grote huizen die jarenlang bleven staan.", ["Hutten van gebogen takken en riet.", "Rondtrekken met alle spullen.", "Vissen met een fuik."], { why: "Boeren woonden op een vaste plek." }),
+      tm("T4-E", 3, "Wat laat de afbeelding met pijlen zien?", "Door fokken veranderden wilde dieren in tamme dieren die meer opleveren, zoals het wilde zwijn in een varken.", ["Tamme dieren worden door de natuur steeds sterker.", "Boeren hielden dieren alleen om op te jagen.", "Jager-verzamelaars fokten al vee."], { img: "a9", why: "Het wilde zwijn werd het varken, de oeros de koe en de moeflon het schaap." }),
+      tm("T4-F", 4, "Welke verandering zie je op deze foto’s?", "Bos is in cultuur gebracht: er zijn akkers voor in de plaats gekomen.", ["De akkers zijn verdwenen en het bos is teruggekomen.", "Het landschap is vanzelf veranderd door het klimaat.", "Jager-verzamelaars hebben de akkers aangelegd."], { img: "a12", why: "Links is bos, rechts zijn akkers." }),
+      tm("T4-G", 4, "Welke zin over natuur en cultuur is juist?", "Een bos dat vanzelf groeit is natuur, een bos dat mensen hebben geplant is cultuur.", ["Alle bossen zijn natuur, ook als mensen ze hebben geplant.", "Een akker is natuur, omdat er planten groeien.", "Cultuur is alles wat oud is, natuur alles wat nieuw is."], { why: "Cultuur is alles wat mensen bedenken en maken." }),
+      tm("T4-H", 5, "De Khoisan in Zuid-Afrika leven nog als jager-verzamelaars. Wat leert dit ons?", "Dat de levenswijze van jager-verzamelaars niet helemaal is verdwenen.", ["Dat de landbouw nog niet overal is uitgevonden.", "Dat het tijdvak jagers & boeren nog niet is geëindigd.", "Dat jager-verzamelaars minder slim zijn gebleven."], { img: "a13", why: "Nomadische jager-verzamelaars bestaan nog steeds." }),
       tmulti(5, "Juist of onjuist? Het gaat over de tijdbalk.", [
         ["De landbouw werd uitgevonden rond 10.000 v.C.", true, "Dat is het keerpunt."],
         ["Het tijdvak jagers & boeren begint rond 800 v.C.", false, "Het eindigt rond 800 v.C."],
@@ -1126,7 +1147,7 @@ const app = $("#app");
 
 /* ============ Voortgang (lokaal in de browser) ============ */
 const KEY = "tijdreis-prehistorie-v1";
-const defaults = () => ({ rounds: {}, wrong: {}, toetsen: {}, streak: { count: 0, last: "" }, herhaal: 0, sound: true, flits: {} });
+const defaults = () => ({ rounds: {}, wrong: {}, toetsen: {}, streak: { count: 0, last: "" }, herhaal: 0, dagelijks: "", sound: true, flits: {} });
 let S = defaults();
 function load() {
   try { const r = localStorage.getItem(KEY); if (r) S = Object.assign(defaults(), JSON.parse(r)); } catch (e) { /* geen opslag beschikbaar */ }
@@ -1433,7 +1454,7 @@ function mamMsg() {
   return `Super! Je hebt al <b>${d} van de ${LEVELS.length}</b> levels gehaald. Nog ${LEVELS.length - d} te gaan voor de oefentoetsen.`;
 }
 function renderHome() {
-  const pool = herhaalPool(), cur = LEVELS.find((L) => !levelDone(L.id));
+  const pool = herhaalPool(), cur = LEVELS.find((L) => !levelDone(L.id)), doneToday = S.dagelijks === ymd(new Date());
   const lv = LEVELS.map((L) => {
     const unlocked = levelUnlocked(L.id), done = levelDone(L.id);
     const passed = [1, 2, 3, 4].filter((r) => rs(L.id, r).passed).length;
@@ -1455,7 +1476,7 @@ function renderHome() {
   <header class="top"><div class="brand"><span class="logo" aria-hidden="true">🦣</span><div><h1>Tijdreis</h1><p>Jagers &amp; boeren · B1 A, B en C</p></div></div>
     <div class="stats"><span class="stat" title="Sterren">⭐ ${totalStars()}</span><span class="stat" title="Dagen op rij geleerd">🔥 ${S.streak.count}</span><button type="button" class="iconbtn" data-act="settings" aria-label="Instellingen">⚙️</button></div></header>
   <section class="mam"><div class="mam-e" aria-hidden="true">🦣</div><div class="bubble">${mamMsg()}</div></section>
-  <button type="button" class="herhaal ${pool.length ? "" : "off"}" data-act="herhaal"><span class="h-e">🔁</span><span><b>Herhaal alles</b><small>${pool.length ? `Een mix van vragen uit alles wat je al hebt gehaald (${pool.length} vragen)` : "Rond eerst een ronde af, dan kun je hier alles herhalen"}</small></span></button>
+  <button type="button" class="herhaal ${pool.length ? "" : "off"}" data-act="herhaal"><span class="h-e">${doneToday ? "✅" : "🔁"}</span><span><b>Dagelijkse herhaling</b><small>${pool.length ? (doneToday ? "Vandaag gedaan! Wil je nog een keer? 15 nieuwe vragen." : `15 vragen in een mix, uit alles wat je al hebt gehaald (${pool.length} vragen)`) : "Rond eerst een ronde af, dan kun je hier elke dag herhalen"}</small></span></button>
   <h2 class="sec">Levels</h2><ol class="path">${lv}</ol>
   <h2 class="sec">Oefentoetsen</h2>
   ${unlocked ? `<ul class="tlist">${tcards}</ul>` : `<div class="tlock"><span>🔒</span><p>Rond alle ${LEVELS.length} levels af om de <b>4 oefentoetsen</b> vrij te spelen. Nog ${LEVELS.filter((L) => !levelDone(L.id)).length} te gaan.</p></div>`}
@@ -1570,14 +1591,18 @@ function startRun(o) {
 }
 function startRound(l, r) { const L = LEVELS[l - 1], rd = L.rounds[r - 1]; startRun({ kind: "round", l, r, title: `${L.title} · ${rd.name}`, color: L.color, qs: rd.qs }); }
 function startHerhaal() {
-  const pool = herhaalPool(); if (!pool.length) return toast("Rond eerst een ronde af, dan kun je alles herhalen.");
-  const n = Math.min(15, pool.length), cand = pool.slice(), qs = [];
-  while (qs.length < n && cand.length) {
-    const w = cand.map((q) => 1 + 2 * (S.wrong[q.id] || 0)), tot = w.reduce((a, b) => a + b, 0);
-    let x = Math.random() * tot, k = 0; while (k < cand.length - 1 && (x -= w[k]) > 0) k++;
-    qs.push(cand.splice(k, 1)[0]);
+  const pool = herhaalPool(); if (!pool.length) return toast("Rond eerst een ronde af, dan kun je dagelijks herhalen.");
+  const n = Math.min(15, pool.length), groups = {};
+  pool.forEach((q) => (groups[q.type] = groups[q.type] || []).push(q));
+  const pick = (arr) => { const w = arr.map((q) => 1 + 2 * (S.wrong[q.id] || 0)), tot = w.reduce((x, y) => x + y, 0); let x = Math.random() * tot, k = 0; while (k < arr.length - 1 && (x -= w[k]) > 0) k++; return arr.splice(k, 1)[0]; };
+  const qs = [];
+  /* om en om uit elk vraagtype, zodat de mix zo gevarieerd mogelijk is */
+  while (qs.length < n) {
+    const kinds = shuffle(Object.keys(groups).filter((t) => groups[t].length));
+    if (!kinds.length) break;
+    for (const t of kinds) { if (qs.length < n) qs.push(pick(groups[t])); }
   }
-  startRun({ kind: "herhaal", title: "Herhaal alles", color: "#5B4BFF", qs });
+  startRun({ kind: "herhaal", title: "Dagelijkse herhaling", color: "#5B4BFF", qs: shuffle(qs) });
 }
 function renderRun() {
   app.innerHTML = `<div class="run" style="--lc:${R.color}"><header class="run-top"><button type="button" class="iconbtn" data-act="quit" aria-label="Stoppen">✕</button><div class="bar" role="progressbar" aria-label="Voortgang"><i id="pb"></i></div><div class="cnt" id="cnt"></div></header>
@@ -1645,7 +1670,7 @@ function finishRun() {
     const best = Math.max(prev.best, pct);
     S.rounds[key] = { best, stars: starsFor(best), passed: prev.passed || pct >= PASS, tries: (prev.tries || 0) + 1 };
     info.levelWon = !wasLevel && levelDone(R.l); info.allWon = !wasAll && allDone();
-  } else S.herhaal = (S.herhaal || 0) + 1;
+  } else { S.herhaal = (S.herhaal || 0) + 1; S.dagelijks = ymd(new Date()); }
   touchStreak(); save();
   R.summary = info; go("summary");
   if (R.kind === "round" ? info.passed : pct >= 0.5) { burst(); sfx("win"); } else sfx("bad");
@@ -1665,8 +1690,8 @@ function renderSummary() {
     else btns += `<button type="button" class="btn ghost" data-act="round" data-l="${R.l}" data-r="${R.r}">Nog een keer voor meer sterren</button>`;
     btns += `<button type="button" class="btn ghost" data-act="home">Terug naar de kaart</button>`;
   } else {
-    head = s.pct >= PASS ? "Mooi herhaald! 🎉" : "Goed geoefend! 💪"; msg = s.pct >= PASS ? "Je kent de stof goed. Herhalen helpt om het te onthouden." : "Vragen die fout gingen, komen vaker terug bij het herhalen.";
-    btns = `<button type="button" class="btn big" data-act="herhaal">Nog een keer herhalen 🔁</button><button type="button" class="btn ghost" data-act="home">Terug naar de kaart</button>`;
+    head = s.pct >= PASS ? "Herhaling klaar! 🎉" : "Goed geoefend! 💪"; msg = s.pct >= PASS ? "Je kent de stof goed. Herhalen helpt om het te onthouden." : "Vragen die fout gingen, komen vaker terug bij het herhalen.";
+    btns = `<button type="button" class="btn big" data-act="herhaal">Nog 15 vragen 🔁</button><button type="button" class="btn ghost" data-act="home">Terug naar de kaart</button>`;
   }
   app.innerHTML = `<div class="sum" style="--lc:${R.color}"><div class="sum-e" aria-hidden="true">${s.passed || s.pct >= PASS ? "🦣" : "💪"}</div><h1>${head}</h1>
   <div class="stars big" aria-label="${stars} sterren">${[1, 2, 3].map((x) => `<i class="${x <= stars ? "on" : ""}">★</i>`).join("")}</div>
